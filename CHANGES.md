@@ -1,3 +1,7 @@
+Entries for PRs merged by dune73:
+* fix: 934130 and 934131 rules (@theMiddleBlue) [#3378]
+
+
 
 # OWASP ModSecurity Core Rule Set (CRS) CHANGES
 
