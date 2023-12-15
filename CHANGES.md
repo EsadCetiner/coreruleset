@@ -1,3 +1,7 @@
+Entries for PRs merged by dune73:
+* fix: type error while writing changelog (@theseion) [#3418]
+
+
 
 # OWASP ModSecurity Core Rule Set (CRS) CHANGES
 
