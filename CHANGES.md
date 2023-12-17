@@ -1,3 +1,7 @@
+Entries for PRs merged by dune73:
+* chore: changelog updates for 2023-12-14, merged by @dune73 (@app/github-actions) [#3426]
+
+
 
 # OWASP ModSecurity Core Rule Set (CRS) CHANGES
 
