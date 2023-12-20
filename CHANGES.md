@@ -1,3 +1,7 @@
+Entries for PRs merged by dune73:
+* fix: fix whitespace matching after PHP command (933160 PL1) (@theseion) [#3432]
+
+
 
 # OWASP ModSecurity Core Rule Set (CRS) CHANGES
 
