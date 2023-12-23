@@ -1,3 +1,7 @@
+Entries for PRs merged by dune73:
+* chore: try to fix draft nightlies by using GH CLI (@theseion) [#3434]
+
+
 
 # OWASP ModSecurity Core Rule Set (CRS) CHANGES
 
