@@ -1,3 +1,7 @@
+Entries for PRs merged by fzipi:
+* fix: don't use `read` for multiline variables (@theseion) [#3440]
+
+
 
 # OWASP ModSecurity Core Rule Set (CRS) CHANGES
 
