@@ -1,3 +1,7 @@
+Entries for PRs merged by airween:
+* chore: changelog updates for 2023-12-24, merged by @airween (@theseion) [#3444]
+
+
 
 # OWASP ModSecurity Core Rule Set (CRS) CHANGES
 
