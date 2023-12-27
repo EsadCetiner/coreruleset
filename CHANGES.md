@@ -1,3 +1,7 @@
+Entries for PRs merged by theseion:
+* chore: verify nightly release state after creation (@theseion) [#3446]
+
+
 
 # OWASP ModSecurity Core Rule Set (CRS) CHANGES
 
