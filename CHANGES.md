@@ -1,3 +1,7 @@
+Entries for PRs merged by theseion:
+* fix(ci): set draft option to false in nightly (@theseion) [#3448]
+
+
 
 # OWASP ModSecurity Core Rule Set (CRS) CHANGES
 
