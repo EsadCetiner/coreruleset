@@ -1,3 +1,7 @@
+Entries for PRs merged by theseion:
+* fix: use GH token in nightly script (@theseion) [#3452]
+
+
 
 # OWASP ModSecurity Core Rule Set (CRS) CHANGES
 
