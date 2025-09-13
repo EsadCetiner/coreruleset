@@ -5,7 +5,9 @@
 ##! because they're common English words.
 ##!
 ##! This list can be generated with:
-##! util/fp-finder/spell.sh -m regex-assembly/include/windows-commands.ra
+##! wget https://raw.githubusercontent.com/coreruleset/coreruleset/refs/tags/v4.0.0/util/fp-finder/english-extended.txt
+##! cat regex-assembly/include/windows-commands.ra | crs-toolchain util fp-finder -e english-extended.txt -
+##! rm -f english-extended.txt
 
 active
 add
