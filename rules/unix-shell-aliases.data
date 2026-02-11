@@ -3,20 +3,21 @@ l
 la
 ll
 lls
+sl
 
-# yum
-yum-update
+# other aliases
+nocomment 
+fhere
+extract
 
 # df & du
 dfh
 duh
+du1
 
 # rfkill aliases, Critical they shutdown the internet in the server
 flighton
 flightoff
-
-# git aliases
-gitlg
 
 # docker aliases
 drmf
@@ -42,7 +43,96 @@ pscpu
 pscpu10
 psmem
 psmem10
+psg
+du1
+#most that word common in english
 
 
 
-# still huge but they cause false positive, these will be in PL3.
+# History aliases
+hgrep
+h
+h1
+h2
+h3
+histg
+
+# Networking aliases
+pg
+pt
+fastping
+myip
+ports
+pingg
+wakeupnas01
+wakeupnas02
+wakeupnas03
+ipt
+iptlist
+iptlistin
+iptlistout
+iptlistfw
+firewall
+header
+headerc
+flushmcd
+cdndel
+amzcdndel
+cdnmdel
+amzcdnmdel
+
+
+
+# System states aliases
+snr
+
+# System control aliases
+reboottomato
+
+# Package manager aliases
+yum-update
+sai
+sau
+updatey
+instally
+upgradey
+purgey
+removey
+autoremovey
+
+
+# HTTP Server launch
+serve
+httpserv
+pyhttpserv
+pyhttpserv
+pyserv
+
+
+# Git commands
+gs
+gst
+gl
+ga
+gaa
+gal
+gall
+gca
+gc
+gcot
+gchekout
+gco
+gcb
+gcheckout
+gb
+gpo
+gpl
+gd
+gclean
+gundo
+gckout
+gchkout
+gsh
+gw
+gitlg
+nah
