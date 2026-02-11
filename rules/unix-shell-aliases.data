@@ -2,3 +2,47 @@
 l
 la
 ll
+lls
+
+# yum
+yum-update
+
+# df & du
+dfh
+duh
+
+# rfkill aliases, Critical they shutdown the internet in the server
+flighton
+flightoff
+
+# git aliases
+gitlg
+
+# docker aliases
+drmf
+dock-run
+dock-exec
+dock-log
+dock-port
+dock-vol
+dock-ip
+dock-rmc
+dock-rmi
+dock-stop
+dock-rm
+dock-do
+
+# Sys info aliases
+totalusage
+partusage
+#usage but cause false positive well discuss about other aliases
+gpumeminfo
+paux
+pscpu
+pscpu10
+psmem
+psmem10
+
+
+
+# still huge but they cause false positive, these will be in PL3.
