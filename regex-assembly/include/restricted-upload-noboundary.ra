@@ -1,0 +1,9 @@
+##! Please refer to the documentation at
+##! https://coreruleset.org/docs/development/regex_assembly/.
+
+\.bash_
+\.oh-my-
+gitlab_config_
+wp-config-
+wp-config.
+wp-config_

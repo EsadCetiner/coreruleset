@@ -1,0 +1,24 @@
+##! Please refer to the documentation at
+##! https://coreruleset.org/docs/development/regex_assembly/.
+
+##! This list can be generated from restricted-files.data by running the following shell command:
+##! body_start=$(grep -n -E -m 1 '^[^#$]' regex_assembly/932180.ra | cut -d: -f1)
+##! ed -s regex_assembly/932180.ra <<EOF
+##! $((body_start)),\$d
+##! w
+##! q
+##! EOF
+##! wget -O english-extended.txt https://raw.githubusercontent.com/coreruleset/coreruleset/refs/tags/v4.0.0/util/fp-finder/english-extended.txt
+##! tmpfile="$(mktemp)"
+##! awk ' !/^#/ && NF {
+##!  n = split($0, segments, "/");
+##!  word = segments[n];
+##!  if (length(word) > 3) print word
+##! }' rules/restricted-files.data | sort | uniq > "$tmpfile"
+##! crs-toolchain util fp-finder "$tmpfile" -e english-extended.txt >> regex_assembly/932180.ra
+##! rm -f "$tmpfile" english-extended.txt
+
+##!> assemble
+  ##!> include restricted-upload.ra
+  ##!> include restricted-upload-noboundary.ra
+##!<
