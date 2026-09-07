@@ -354,6 +354,141 @@ tests:
           log:
             expect_ids: [930100]
   - test_id: 22
+    desc: "WAF-Payload-Collection - Directory traversal"
+    stages:
+      - input:
+          dest_addr: "127.0.0.1"
+          method: "POST"
+          port: 80
+          headers:
+            Host: "localhost"
+            User-Agent: "OWASP CRS test agent"
+            Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+          uri: "/"
+          data: 'tp_param=%f0%80%80%ae%f0%80%80%ae%bg%qfetc%bg%qfissue'
+          version: "HTTP/1.1"
+        output:
+          log:
+            expect_ids: [930100]
+  - test_id: 23
+    desc: "WAF-Payload-Collection - Directory traversal"
+    stages:
+      - input:
+          dest_addr: "127.0.0.1"
+          method: "POST"
+          port: 80
+          headers:
+            Host: "localhost"
+            User-Agent: "OWASP CRS test agent"
+            Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+          uri: "/"
+          data: 'tp_param=%f0%80%80%ae%f0%80%80%ae%u2215%f0%80%80%ae%f0%80%80%ae%u2215%f0%80%80%ae%f0%80%80%ae%u2215etc%u2215issue'
+          version: "HTTP/1.1"
+        output:
+          log:
+            expect_ids: [930100]
+  - test_id: 24
+    desc: "WAF-Payload-Collection - Directory traversal"
+    stages:
+      - input:
+          dest_addr: "127.0.0.1"
+          method: "POST"
+          port: 80
+          headers:
+            Host: "localhost"
+            User-Agent: "OWASP CRS test agent"
+            Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+          uri: "/"
+          data: 'tp_param=%fc%80%80%80%80%ae%fc%80%80%80%80%ae%bg%qfetc%bg%qfissue'
+          version: "HTTP/1.1"
+        output:
+          log:
+            expect_ids: [930100]
+  - test_id: 25
+    desc: "WAF-Payload-Collection - Directory traversal"
+    stages:
+      - input:
+          dest_addr: "127.0.0.1"
+          method: "GET"
+          port: 80
+          headers:
+            Host: "localhost"
+            User-Agent: "OWASP CRS test agent"
+            Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+          uri: "/?tp_param=%2F%%5C..%%5C..%%5C..%%5C..%%5C..%%5C..%%5C..%%5C..%%5C..%%5C..%%5C..%%5C..%%5C..%%5C..winnt%2Fdesktop.ini"
+          version: "HTTP/1.1"
+        output:
+          log:
+            expect_ids: [930100]
+  - test_id: 26
+    desc: "WAF-Payload-Collection - Directory traversal"
+    stages:
+      - input:
+          dest_addr: "127.0.0.1"
+          method: "POST"
+          port: 80
+          headers:
+            Host: "localhost"
+            User-Agent: "OWASP CRS test agent"
+            Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+          uri: "/"
+          data: 'tp_param=%2F%%5C..%%5C..%%5C..%%5C..%%5C..%%5C..%%5C..%%5C..%%5C..%%5C..%%5C..%%5C..%%5C..%%5C..winnt%2Fdesktop.ini'
+          version: "HTTP/1.1"
+        output:
+          log:
+            expect_ids: [930100]
+  - test_id: 27
+    desc: "WAF-Payload-Collection - Directory traversal"
+    stages:
+      - input:
+          dest_addr: "127.0.0.1"
+          method: "POST"
+          port: 80
+          headers:
+            Host: "localhost"
+            User-Agent: "OWASP CRS test agent"
+            Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+          uri: "/"
+          data: 'tp_param=%fc%80%80%80%80%ae%fc%80%80%80%80%ae%uF025%fc%80%80%80%80%ae%fc%80%80%80%80%ae%uF025%fc%80%80%80%80%ae%fc%80%80%80%80%ae%uF025etc%uF025issue'
+          version: "HTTP/1.1"
+        output:
+          log:
+            expect_ids: [930100]
+  - test_id: 28
+    desc: "WAF-Payload-Collection - Directory traversal"
+    stages:
+      - input:
+          dest_addr: "127.0.0.1"
+          method: "POST"
+          port: 80
+          headers:
+            Host: "localhost"
+            User-Agent: "OWASP CRS test agent"
+            Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+          uri: "/"
+          data: 'tp_param=%f0%80%80%ae%f0%80%80%ae%u2215etc%u2215issue'
+          version: "HTTP/1.1"
+        output:
+          log:
+            expect_ids: [930100]
+  - test_id: 29
+    desc: "WAF-Payload-Collection - Directory traversal"
+    stages:
+      - input:
+          dest_addr: "127.0.0.1"
+          method: "POST"
+          port: 80
+          headers:
+            Host: "localhost"
+            User-Agent: "OWASP CRS test agent"
+            Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+          uri: "/"
+          data: 'tp_param=%e0%80%ae%e0%80%ae%uF025windows%uF025system32%uF025drivers%uF025etc%uF025hosts'
+          version: "HTTP/1.1"
+        output:
+          log:
+            expect_ids: [930100]
+  - test_id: 30
     desc: "False Positive Waf-Comparasion-Proect"
     stages:
       - input:
@@ -369,7 +504,7 @@ tests:
         output:
           log:
             no_expect_ids: [930100]
-  - test_id: 23
+  - test_id: 31
     desc: "Path Traversal Attack (/../) encoded"
     stages:
       - input:

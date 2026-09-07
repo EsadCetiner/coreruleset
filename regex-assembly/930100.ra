@@ -74,8 +74,16 @@
   %fe
   %01
   \x01
+  %%5C
+  %\\
+  %ae%fc
+  %f0
+  %e0
   ##!=< slashes
   ##!=> slashes
+  ##!=>
+    ?
+  ##!=>
 
   ##! dot patterns
   ##! These use the same techniques as for slashes to evade the detection of '.'
@@ -111,6 +119,8 @@
   %%32%45
   %%32E
   %c0%6e
+  %80
+  80%ae
   ##!=>
 
   ##! Append {2,3} to the result, as we're looking for two or three dots (e.g. /../, /.../)
