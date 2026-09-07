@@ -9,7 +9,7 @@
 ##! - ../  or  ..\  or  ..;  (dots followed by separator)
 ##! - /..  or  \..  or  ;..  (separator followed by dots)
 
-##!> define sep [\x5c/;]
+##!> define sep [\x5c/;\x01]
 
 ##!> assemble
   ^

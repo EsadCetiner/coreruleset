@@ -367,10 +367,11 @@ aws-key.yaml
 aws-key.yml
 # Python cache
 __pycache__/
-# Windows system ini files
+# Windows system files
 boot.ini
 system.ini
 win.ini
+ntuser.dat
 # NodeJS log file
 pm2.log
 # Generic log filename

@@ -66,6 +66,11 @@
   %u002f
   %1u
   /
+  %f8
+  %ee
+  %fe
+  %01
+  \x01
   ##!=< slashes
   ##!=> slashes
 
@@ -77,9 +82,12 @@
   \.\?
   \?\.
   \?
+  %3F
+  %3F\.
   %2e
   0x2e
   %c0\.
+  %c0
   %252e
   %c0%2e
   %c0%ae
@@ -103,7 +111,7 @@
   ##!=>
 
   ##! Append {2,3} to the result, as we're looking for two or three dots (e.g. /../, /.../)
-  {2,3}
+  {2,4}
   ##!=>
 
   ##!=> slashes

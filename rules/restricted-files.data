@@ -417,6 +417,8 @@ phpcs.xml.dist
 Desktop.ini
 # Windows Explorer cache of thumbnail images
 Thumbs.db
+# Windows ntusers file
+ntuser.dat
 # PHP configuration files
 .user.ini
 php.ini
