@@ -42,10 +42,13 @@
   %c1%pc
   %c0%9v
   %c0%qf
+  %c0
+  %c1
   %c1%8s
   %c1%1c
   %c1%af
   %bg%qf
+  %bg
   ##! Unicode 16 "alternative" glyphs
   %u2215
   %u2216
@@ -111,7 +114,7 @@
   ##!=>
 
   ##! Append {2,3} to the result, as we're looking for two or three dots (e.g. /../, /.../)
-  {2,4}
+  {1,4}
   ##!=>
 
   ##!=> slashes
